@@ -1,0 +1,17 @@
+<label for="color">Color</label><input type="text" id="color" [(ngModel)]="bycicle.color"><br>
+<label for="marca">Marca</label><input type="text" id="marca" [(ngModel)]="bycicle.marca"><br>
+<label for="velocidad">Velocidad</label><input type="number" name="" id="velocidad" [(ngModel)]="bycicle.velocidad"><br>
+<label for="piniones">Piñones</label><input type="number" name="" id="piniones" [(ngModel)]="bycicle.piniones"><br>
+<label for="platos">Platos</label><input type="number" name="" id="platos" [(ngModel)]="bycicle.platos"><br>
+<label for="electrica">Electrica</label><input type="checkbox" name="" id="electrica" [(ngModel)]="bycicle.electrica"><br>
+<br>
+
+<label for="cambioVel">Cantidad a frenar/acelerar:</label><br>
+<input type="number" name="" id="cambioVel" [(ngModel)]="cambioVelocidad"><br>
+<button (click)="bycicle.acelerar(cambioVelocidad)">Acelerar</button>
+<button (click)="bycicle.frenar(cambioVelocidad)">Frenar</button>
+
+<br>
+<pre>
+{{bycicleString}}
+</pre>
