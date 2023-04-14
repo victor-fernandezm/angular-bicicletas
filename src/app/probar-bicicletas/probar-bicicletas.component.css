@@ -1,0 +1,7 @@
+input[type="color"] {
+    box-sizing: border-box;
+    border-radius: 2.5px;
+    border: 1px solid #888;
+    height: 22px;
+    background: #ccc;
+}

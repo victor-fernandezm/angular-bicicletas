@@ -1,4 +1,4 @@
-<label for="color">Color</label><input type="text" id="color" [(ngModel)]="bycicle.color"><br>
+<label for="color">Color</label><input type="color" id="color" [(ngModel)]="bycicle.color"><input type="text" [(ngModel)]="bycicle.color"><br>
 <label for="marca">Marca</label><input type="text" id="marca" [(ngModel)]="bycicle.marca"><br>
 <label for="velocidad">Velocidad</label><input type="number" name="" id="velocidad" [(ngModel)]="bycicle.velocidad"><br>
 <label for="piniones">Piñones</label><input type="number" name="" id="piniones" [(ngModel)]="bycicle.piniones"><br>
@@ -15,3 +15,5 @@
 <pre>
 {{bycicleString}}
 </pre>
+<button (click)="drawBycicle()">Draw</button>
+<br>
